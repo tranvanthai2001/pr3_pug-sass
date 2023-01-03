@@ -1,0 +1,395 @@
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+}
+body {
+  background: #1F2122;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 15px auto;
+}
+.container header {
+  padding: 16px;
+}
+.container header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container header .navbar-logo {
+  flex-basis: 25%;
+  margin-right: 5%;
+  border-right: 1px solid #27292a;
+}
+.container header .navbar-search form {
+  position: relative;
+}
+.container header .navbar-search form input {
+  border: solid 1.5px #27292a;
+  border-radius: 2rem;
+  background: #27292a;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #666;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container header .navbar-search form input:focus {
+  outline: none;
+  border: 1.5px solid #2196f3;
+}
+.container header .navbar-search form input:focus ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #1F2122;
+  padding: 0 0.2rem;
+  color: #2196f3;
+}
+.container header .navbar-search form label {
+  position: absolute;
+  left: 1rem;
+  color: #666;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container header .navbar nav {
+  flex-basis: 70%;
+}
+.container header .navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+.container header .navbar nav ul li a {
+  text-decoration: none;
+  color: #666;
+}
+.container header .navbar nav ul li a:hover {
+  color: #e75e8d;
+  transition: all 0.8s;
+}
+.container header .navbar nav ul .List-button .button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #666;
+  outline: none;
+  background: #27292a;
+  padding: 16px 48px;
+  border-radius: 48px;
+  overflow: hidden;
+  transition: all 0.8s;
+  z-index: 999;
+}
+.container header .navbar nav ul .List-button .button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.container header .navbar nav ul .List-button .button:hover::before {
+  transform: scaleX(1) skewX(35deg);
+}
+.container header .navbar nav ul .List-button .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #e75e8d;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+.container .containers-child {
+  background: #27292a;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.container .containers-child .child-secone {
+  padding: 60px;
+}
+.container .containers-child .child-secone .banner-head {
+  padding: 40px;
+  background-image: url(/image/banner-bg.jpg);
+  background-position: center center;
+  border-radius: 32px;
+  background-size: cover;
+}
+.container .containers-child .child-secone .banner-head h6 {
+  color: #fff;
+  margin: 25px 0;
+  line-height: 24px;
+  font-size: 20px;
+}
+.container .containers-child .child-secone .banner-head h4 {
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 54px;
+  font-weight: 700;
+  font-size: 44px;
+}
+.container .containers-child .child-secone .banner-head h4 em {
+  color: #e75e8d;
+}
+.container .containers-child .child-secone .banner-head .head-button .btn {
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+}
+.container .containers-child .child-secone .banner-head .head-button .btn:hover {
+  color: #e75e8d;
+  cursor: pointer;
+  background: #fff;
+}
+.container .containers-child .most-popular {
+  margin: 10px 60px;
+  background: #1F2122;
+  border-radius: 23px;
+}
+.container .containers-child .most-popular .popular-iteam {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 350px 100px 350px;
+  grid-gap: 30px;
+  padding: 30px;
+}
+.container .containers-child .most-popular .popular-iteam:hover > :not(:hover) {
+  opacity: 0.4;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box {
+  overflow: hidden;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  overflow: hidden;
+  transition: all 0.8s;
+  transition: 0.3s;
+  position: relative;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box:first-child {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(2), .container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(3) {
+  grid-row: 1/3;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(4), .container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(5) {
+  grid-row: 2/4;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box:last-child {
+  grid-column: 3/5;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box:hover img {
+  transform: scale(1.2);
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box:hover .box-info .head-button .btn {
+  visibility: visible;
+  opacity: 1000;
+  margin-top: -100px;
+  margin-left: 50px;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box .head-button .btn {
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+  position: absolute;
+  margin-top: 100px;
+  visibility: hidden;
+}
+.container .containers-child .most-popular .popular-iteam .iteam-box .head-button .btn:hover {
+  color: #e75e8d;
+  cursor: pointer;
+  background: #fff;
+}
+.container .containers-child .library {
+  margin: 60px;
+  padding: 30px;
+  background: #1F2122;
+  border-radius: 23px;
+  position: relative;
+}
+.container .containers-child .library .library-gaming {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.container .containers-child .library .library-gaming h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.container .containers-child .library .library-gaming h1 em {
+  color: #e75e8d;
+  text-decoration-line: underline;
+  padding-left: 40px;
+}
+.container .containers-child .library .library-gaming .gaming-one ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #666;
+}
+.container .containers-child .library .library-gaming .gaming-one ul li img {
+  border-radius: 23px;
+}
+.container .containers-child .library .library-gaming .gaming-one ul li h3 {
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .containers-child .library .library-gaming .gaming-one ul li span {
+  color: #666;
+}
+.container .containers-child .library .library-gaming .gaming-one ul li .head-button {
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+  color: #666;
+  background: #1F2122;
+  border: 1px solid #666;
+}
+.container .containers-child .library .library-gaming .gaming-two ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #666;
+}
+.container .containers-child .library .library-gaming .gaming-two ul li img {
+  border-radius: 23px;
+}
+.container .containers-child .library .library-gaming .gaming-two ul li h3 {
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .containers-child .library .library-gaming .gaming-two ul li span {
+  color: #666;
+}
+.container .containers-child .library .library-gaming .gaming-two ul li .head-button {
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+  color: #e75e8d;
+  background: #1F2122;
+  border: 1px solid #e75e8d;
+}
+.container .containers-child .library .library-gaming .gaming-two ul li .head-button:hover {
+  background: #fff;
+  color: #e75e8d;
+  border: none;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.container .containers-child .library .library-gaming .gaming-three ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+.container .containers-child .library .library-gaming .gaming-three ul li img {
+  border-radius: 23px;
+}
+.container .containers-child .library .library-gaming .gaming-three ul li h3 {
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .containers-child .library .library-gaming .gaming-three ul li span {
+  color: #666;
+}
+.container .containers-child .library .library-gaming .gaming-three ul li .head-button {
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+  color: #666;
+  background: #1F2122;
+  border: 1px solid #666;
+}
+.container .containers-child .library .gaming-bt {
+  position: absolute;
+  transform: translate(210%, 0%);
+}
+.container .containers-child .library .gaming-bt .head-button {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .containers-child .library .gaming-bt .head-button:hover {
+  color: #e75e8d;
+  cursor: pointer;
+  background: #fff;
+}
+.container footer p {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

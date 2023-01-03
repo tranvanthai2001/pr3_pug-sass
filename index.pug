@@ -1,0 +1,139 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./sass/css/style.css")
+        link(rel="stylesheet", href="./reset.css")
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+    body
+        .container
+            header
+                .navbar
+                    .navbar-logo
+                        a(href="#")
+                            img(src="./image/logo.png" alt="logo")
+                    .navbar-search
+                        form
+                            input(type="text", id="input-search")
+                            label(for="input-search") ấn vào đây bro
+                    nav.navbar-list
+                        ul
+                            li
+                                a(href="#") Home  
+                            li
+                                a(href="#") Browse  
+                            li
+                                a(href="#") Details  
+                            li
+                                a(href="#") Streams 
+                            .List-button
+                                .button Profile
+            .containers-child 
+                section.child-secone 
+                    .banner-head 
+                        h6 Welcome To Cyborg 
+                        h4
+                            em BROWSE 
+                            |  OUR POPULAR GAMES HERE
+                        .head-button 
+                            .btn Browse Now
+                section.most-popular
+                    .popular-iteam 
+                        .iteam-box
+                            img(src="https://images.unsplash.com/photo-1614285457768-646f65ca8548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvcnRuaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt='popular-01')
+                            .box-info
+                                .head-button 
+                                    .btn Discover Popular
+                        .iteam-box
+                            img(src="https://images.unsplash.com/photo-1557461762-e08315322e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHViZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-02')
+                        .iteam-box
+                            img(src="https://images.unsplash.com/photo-1577983770799-380cd543c064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3MlMjBnb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-03')
+                        .iteam-box
+                            img(src="https://images.unsplash.com/photo-1581432079854-2f6d5678b478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-04')
+                        .iteam-box
+                           img(src="https://images.unsplash.com/photo-1633329858507-67e75981418f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FyY3JhZnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt='popular-05')
+                        .iteam-box
+                            img(src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-05')
+                section.library 
+                    .library-gaming
+                        h1 
+                            em Your Gaming 
+                            |   Library
+                        .gaming-one 
+                            ul 
+                                li 
+                                   img(src="./image/game-01.jpg", alt="game 01") 
+                                li 
+                                    h3 Dota 2
+                                    span Sandbox
+                                li 
+                                    h3 Date Added
+                                    span 1/1/2023
+                                li 
+                                    h3 Hours Played
+                                    span 634 H 22 Mins
+                                li 
+                                    h3 Currently
+                                    span Downloaded
+                                li 
+                                    .head-button 
+                                        .btn Donwloaded
+                        .gaming-two 
+                            ul 
+                                li 
+                                   img(src="./image/game-02.jpg", alt="game 01") 
+                                li 
+                                    h3 Dota 2
+                                    span Sandbox
+                                li 
+                                    h3 Date Added
+                                    span 1/1/2023
+                                li 
+                                    h3 Hours Played
+                                    span 634 H 22 Mins
+                                li 
+                                    h3 Currently
+                                    span Downloaded
+                                li 
+                                    .head-button 
+                                        .btn Donwload
+                        .gaming-three
+                            ul 
+                                li 
+                                   img(src="./image/game-03.jpg", alt="game 01") 
+                                li 
+                                    h3 Dota 2
+                                    span Sandbox
+                                li 
+                                    h3 Date Added
+                                    span 1/1/2023
+                                li 
+                                    h3 Hours Played
+                                    span 634 H 22 Mins
+                                li 
+                                    h3 Currently
+                                    span Downloaded
+                                li 
+                                    .head-button 
+                                        .btn Donwloaded
+                    .gaming-bt
+                        .head-button 
+                            .btn View Your Library
+            footer
+                p Copyright © 2036 Cyborg Gaming Company. All rights reserved.Design: TemplateMo Distributed By ThemeWagon 
+
+
+                        
+                    
+
+
+                            
+            
+
+                    
+
+                

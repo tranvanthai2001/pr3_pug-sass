@@ -1,0 +1,11 @@
+@mixin buttonn {
+    display: inline-block;
+	color: $color_white;
+	outline: none;
+	background: $background_btn;
+	padding: 12px 30px;
+	font-size: 14px;
+	line-height: 21px;
+	border-radius: 25px;
+	transition: $transition;
+}
