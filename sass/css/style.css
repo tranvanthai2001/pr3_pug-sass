@@ -13,9 +13,8 @@
     max-width: 720px;
   }
 }
-body {
+body, html {
   background: #1F2122;
-  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -169,7 +168,7 @@ body {
 }
 .container .containers-child .most-popular .popular-iteam {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 350px 100px 350px;
   grid-gap: 30px;
   padding: 30px;
@@ -233,7 +232,7 @@ body {
 }
 .container .containers-child .library {
   margin: 60px;
-  padding: 30px;
+  padding: 26px;
   background: #1F2122;
   border-radius: 23px;
   position: relative;
@@ -323,7 +322,7 @@ body {
 .container .containers-child .library .library-gaming .gaming-two ul li .head-button:hover {
   background: #fff;
   color: #e75e8d;
-  border: none;
+  border: 1px solid #fff;
   transition: all 0.8s;
   cursor: pointer;
 }
@@ -331,7 +330,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid #666;
 }
 .container .containers-child .library .library-gaming .gaming-three ul li img {
@@ -362,12 +361,9 @@ body {
 }
 .container .containers-child .library .gaming-bt {
   position: absolute;
-  transform: translate(210%, 0%);
+  left: 41%;
 }
 .container .containers-child .library .gaming-bt .head-button {
-  align-items: center;
-  text-align: center;
-  margin: auto;
   display: inline-block;
   color: #fff;
   outline: none;
@@ -377,19 +373,162 @@ body {
   line-height: 21px;
   border-radius: 25px;
   transition: all 0.8s;
-  margin-left: auto;
-  margin-right: auto;
 }
 .container .containers-child .library .gaming-bt .head-button:hover {
   color: #e75e8d;
   cursor: pointer;
   background: #fff;
 }
+.container .containers-child .Fortnite-details {
+  background: #1F2122;
+  margin: 60px;
+  margin-top: 0px;
+  border-radius: 23px;
+}
+.container .containers-child .Fortnite-details .details-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.container .containers-child .Fortnite-details .details-container .box-head {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  padding-bottom: 20px;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one {
+  padding: 32px;
+  border-radius: 23px;
+  background: #27292a;
+  display: flex;
+  justify-content: space-between;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one h4 {
+  color: #fff;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one span {
+  color: #666;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one ul li {
+  color: #fff;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one ul li:first-child i {
+  color: #FFFF00;
+  padding-bottom: 10px;
+  padding-right: 2px;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one ul li:last-child i {
+  color: #e75e8d;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two {
+  padding: 32px;
+  border-radius: 23px;
+  background: #27292a;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two ul {
+  display: flex;
+  justify-content: space-between;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two ul li {
+  color: #fff;
+  text-align: center;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two ul li i {
+  display: block;
+  padding-bottom: 10px;
+  color: #e75e8d;
+}
+.container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two ul li:first-child i {
+  color: #FFFF00;
+}
+.container .containers-child .Fortnite-details .details-container .box-body {
+  display: flex;
+  gap: 32px;
+}
+.container .containers-child .Fortnite-details .details-container .box-body img {
+  border-radius: 23px;
+  overflow: hidden;
+}
+.container .containers-child .Fortnite-details .details-container p {
+  color: #666;
+  line-height: 30px;
+  font-size: 15px;
+  padding: 20px 0;
+}
+.container .containers-child .Fortnite-details .details-container p em {
+  color: #fff;
+}
+.container .containers-child .Fortnite-details .details-container p em:hover {
+  color: #e75e8d;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.container .containers-child .Fortnite-details .details-container .btn {
+  display: inline-block;
+  color: #fff;
+  outline: none;
+  background: #e75e8d;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 25px;
+  transition: all 0.8s;
+  text-align: center;
+  border: 1px solid #e75e8d;
+  background: #1F2122;
+  color: #e75e8d;
+  font-size: 16px;
+}
+.container .containers-child .Fortnite-details .details-container .btn:hover {
+  color: #e75e8d;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.container .containers-child .live-stream {
+  margin: 60px;
+  margin-top: 0;
+  padding: 40px;
+  background: #1F2122;
+  display: flex;
+  gap: 32px;
+  border-radius: 23px;
+}
+.container .containers-child .live-stream .stream-box {
+  border-radius: 23px;
+  border: 1px solid #666;
+}
+.container .containers-child .live-stream .stream-box .box-iteamm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container .containers-child .live-stream .stream-box .box-iteamm img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+}
+.container .containers-child .live-stream .stream-box .box-iteamm h2 {
+  color: #fff;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .containers-child .live-stream .stream-box .box-iteamm p {
+  color: #666;
+  line-height: 32px;
+}
 .container footer p {
   color: #fff;
   align-items: center;
   text-align: center;
   padding: 50px;
+  line-height: 32px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
