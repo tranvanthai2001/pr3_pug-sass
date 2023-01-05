@@ -1,20 +1,50 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (min-width: 1024px) {
     .container {
         max-width: 1140px;
     }
 }
-@media (max-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+        .navbar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            #check {
+                &:checked {
+                    & ~ {
+                        .navbar-list {
+                           display: block;
+                        }
+                        .navbar-search {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .checkbtn {
+                display: block;
+            }
+            .navbar-logo {
+                position: absolute;
+                left: 0;
+            }
+            .navbar-list {
+                display: none;
+            }
+        }
+    } 
 }
-@media (max-width:767px) {
-    .container {
-        max-width: 720px;
-    }
-}
-// @media (max-width: 576px){
-//     .container {
-//         max-width: 540px;
-//     }
-// }

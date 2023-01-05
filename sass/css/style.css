@@ -1,19 +1,59 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @media (min-width: 1024px) {
   .container {
     max-width: 1140px;
   }
 }
-@media (max-width: 992px) {
-  .container {
-    max-width: 960px;
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+  }
+  header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  header .navbar #check:checked ~ .navbar-list {
+    display: block;
+  }
+  header .navbar #check:checked ~ .navbar-search {
+    display: none;
+  }
+  header .navbar .checkbtn {
+    display: block;
+  }
+  header .navbar .navbar-logo {
+    position: absolute;
+    left: 0;
+  }
+  header .navbar .navbar-list {
+    display: none;
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 720px;
-  }
-}
-body, html {
+body {
   background: #1F2122;
 }
 
@@ -24,11 +64,31 @@ body, html {
   padding: 16px;
 }
 .container header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+}
+.container header .navbar #check {
+  display: none;
+}
+.container header .navbar .checkbtn {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
 }
 .container header .navbar-logo {
+  -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
   margin-right: 5%;
   border-right: 1px solid #27292a;
@@ -43,6 +103,8 @@ body, html {
   padding: 1rem;
   font-size: 1rem;
   color: #666;
+  -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container header .navbar-search form input:focus {
@@ -50,6 +112,8 @@ body, html {
   border: 1.5px solid #2196f3;
 }
 .container header .navbar-search form input:focus ~ label {
+  -webkit-transform: translateY(-50%) scale(0.8);
+  -ms-transform: translateY(-50%) scale(0.8);
   transform: translateY(-50%) scale(0.8);
   background-color: #1F2122;
   padding: 0 0.2rem;
@@ -60,15 +124,26 @@ body, html {
   left: 1rem;
   color: #666;
   pointer-events: none;
+  -webkit-transform: translateY(1rem);
+  -ms-transform: translateY(1rem);
   transform: translateY(1rem);
+  -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container header .navbar nav {
+  -ms-flex-preferred-size: 70%;
   flex-basis: 70%;
 }
 .container header .navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
   gap: 20px;
 }
@@ -78,6 +153,8 @@ body, html {
 }
 .container header .navbar nav ul li a:hover {
   color: #e75e8d;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 .container header .navbar nav ul .List-button .button {
@@ -90,6 +167,8 @@ body, html {
   padding: 16px 48px;
   border-radius: 48px;
   overflow: hidden;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   z-index: 999;
 }
@@ -98,6 +177,8 @@ body, html {
   cursor: pointer;
 }
 .container header .navbar nav ul .List-button .button:hover::before {
+  -webkit-transform: scaleX(1) skewX(35deg);
+  -ms-transform: scaleX(1) skewX(35deg);
   transform: scaleX(1) skewX(35deg);
 }
 .container header .navbar nav ul .List-button .button::before {
@@ -109,14 +190,25 @@ body, html {
   width: 150%;
   height: 100%;
   background-color: #e75e8d;
+  -webkit-transform: scaleX(0) skewX(35deg);
+  -ms-transform: scaleX(0) skewX(35deg);
   transform: scaleX(0) skewX(35deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
   transform-origin: left;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 .container .containers-child {
   background: #27292a;
   border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .container .containers-child .child-secone {
@@ -154,6 +246,8 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 .container .containers-child .child-secone .banner-head .head-button .btn:hover {
@@ -167,8 +261,10 @@ body, html {
   border-radius: 23px;
 }
 .container .containers-child .most-popular .popular-iteam {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-rows: 350px 30px 100px 30px 350px;
   grid-template-rows: 350px 100px 350px;
   grid-gap: 30px;
   padding: 30px;
@@ -182,27 +278,41 @@ body, html {
 .container .containers-child .most-popular .popular-iteam .iteam-box img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 32px;
   overflow: hidden;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
-  transition: 0.3s;
   position: relative;
 }
 .container .containers-child .most-popular .popular-iteam .iteam-box:first-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 .container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(2), .container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1/3;
 }
 .container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(4), .container .containers-child .most-popular .popular-iteam .iteam-box:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   grid-row: 2/4;
 }
 .container .containers-child .most-popular .popular-iteam .iteam-box:last-child {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-column: 3/5;
 }
 .container .containers-child .most-popular .popular-iteam .iteam-box:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 .container .containers-child .most-popular .popular-iteam .iteam-box:hover .box-info .head-button .btn {
@@ -220,6 +330,8 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
   margin-top: 100px;
@@ -238,7 +350,12 @@ body, html {
   position: relative;
 }
 .container .containers-child .library .library-gaming {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
   padding: 30px;
@@ -250,12 +367,18 @@ body, html {
 }
 .container .containers-child .library .library-gaming h1 em {
   color: #e75e8d;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   padding-left: 40px;
 }
 .container .containers-child .library .library-gaming .gaming-one ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 10px 0;
   border-bottom: 1px solid #666;
@@ -281,14 +404,21 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   color: #666;
   background: #1F2122;
   border: 1px solid #666;
 }
 .container .containers-child .library .library-gaming .gaming-two ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 10px 0;
   border-bottom: 1px solid #666;
@@ -314,6 +444,8 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   color: #e75e8d;
   background: #1F2122;
@@ -323,12 +455,19 @@ body, html {
   background: #fff;
   color: #e75e8d;
   border: 1px solid #fff;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   cursor: pointer;
 }
 .container .containers-child .library .library-gaming .gaming-three ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 10px 0;
   border-bottom: 1px solid #666;
@@ -354,6 +493,8 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   color: #666;
   background: #1F2122;
@@ -372,6 +513,8 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 .container .containers-child .library .gaming-bt .head-button:hover {
@@ -387,11 +530,18 @@ body, html {
 }
 .container .containers-child .Fortnite-details .details-container {
   padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: distribute;
   align-content: space-around;
 }
 .container .containers-child .Fortnite-details .details-container .box-head {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
@@ -401,7 +551,11 @@ body, html {
   padding: 32px;
   border-radius: 23px;
   background: #27292a;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .container .containers-child .Fortnite-details .details-container .box-head .iteam-box-one h4 {
@@ -429,7 +583,11 @@ body, html {
   background: #27292a;
 }
 .container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .container .containers-child .Fortnite-details .details-container .box-head .iteam-box-two ul li {
@@ -445,6 +603,8 @@ body, html {
   color: #FFFF00;
 }
 .container .containers-child .Fortnite-details .details-container .box-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 32px;
 }
@@ -463,6 +623,8 @@ body, html {
 }
 .container .containers-child .Fortnite-details .details-container p em:hover {
   color: #e75e8d;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   cursor: pointer;
 }
@@ -475,6 +637,8 @@ body, html {
   font-size: 14px;
   line-height: 21px;
   border-radius: 25px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
   text-align: center;
   border: 1px solid #e75e8d;
@@ -493,6 +657,8 @@ body, html {
   margin-top: 0;
   padding: 40px;
   background: #1F2122;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 32px;
   border-radius: 23px;
@@ -502,7 +668,12 @@ body, html {
   border: 1px solid #666;
 }
 .container .containers-child .live-stream .stream-box .box-iteamm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px;
 }
@@ -524,6 +695,8 @@ body, html {
 }
 .container footer p {
   color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   padding: 50px;

@@ -1,3 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@mixin flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
 @mixin buttonn {
     display: inline-block;
 	color: $color_white;
@@ -7,5 +22,18 @@
 	font-size: 14px;
 	line-height: 21px;
 	border-radius: 25px;
+	-webkit-transition: $transition;
+	-o-transition: $transition;
 	transition: $transition;
+}
+@mixin image {
+	width: 100%;
+	height: 100%; 
+	-o-object-fit: cover; 
+	   object-fit: cover; 
+	border-radius: 32px; 
+	overflow: hidden; 
+	-webkit-transition: $transition; 
+	-o-transition: $transition; 
+	transition: $transition; 
 }

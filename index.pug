@@ -12,6 +12,9 @@ html(lang="en")
         .container
             header
                 .navbar
+                    input#check(type='checkbox')
+                    label.checkbtn(for='check')
+                        i.fas.fa-bars
                     .navbar-logo
                         a(href="#")
                             img(src="./image/logo.png" alt="logo")
@@ -32,7 +35,7 @@ html(lang="en")
                             .List-button
                                 .button Profile
             .containers-child 
-                section.child-secone 
+                main.child-secone 
                     .banner-head 
                         h6 Welcome To Cyborg 
                         h4
@@ -43,20 +46,20 @@ html(lang="en")
                 section.most-popular
                     .popular-iteam 
                         .iteam-box
-                            img(src="https://images.unsplash.com/photo-1614285457768-646f65ca8548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvcnRuaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt='popular-01')
+                            img(src="./image/popular-01.jpg" alt='popular-01')
                             .box-info
                                 .head-button 
                                     .btn Discover Popular
                         .iteam-box
-                            img(src="https://images.unsplash.com/photo-1557461762-e08315322e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHViZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-02')
+                            img(src="./image/popular-02.jpg" alt='popular-02')
                         .iteam-box
-                            img(src="https://images.unsplash.com/photo-1577983770799-380cd543c064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3MlMjBnb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-03')
+                            img(src="./image/popular-03.jpg" alt='popular-03')
                         .iteam-box
-                            img(src="https://images.unsplash.com/photo-1581432079854-2f6d5678b478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-04')
+                            img(src="./image/popular-04.jpg" alt='popular-04')
                         .iteam-box
-                           img(src="https://images.unsplash.com/photo-1633329858507-67e75981418f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FyY3JhZnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt='popular-05')
+                           img(src="./image/popular-05.jpg" alt='popular-05')
                         .iteam-box
-                            img(src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='popular-05')
+                            img(src="./image/popular-06.jpg" alt='popular-06')
                 section.library 
                     .library-gaming
                         h1 
@@ -131,20 +134,26 @@ html(lang="en")
                                     span Sandbox
                                 ul 
                                     li 
-                                        <i class="fa-sharp fa-solid fa-star"></i> 4.8
+                                        i.fa-sharp.fa-solid.fa-star 
+                                        |   4.8
                                     li
-                                        <i class="fa-solid fa-download"></i> 2.3M
+                                        i.fa-solid.fa-download
+                                        |   2.3M
                             .iteam-box-two
                                 ul 
                                     li 
-                                        <i class="fa-sharp fa-solid fa-star"></i> 4.8
+                                        i.fa-sharp.fa-solid.fa-star 
+                                        |   4.8
                                     li 
-                                        <i class="fa-solid fa-download"></i> 2.3M
+                                        i.fa-solid.fa-download 
+                                        |   2.3M
                                     li 
-                                        <i class="fa-solid fa-gamepad"></i> Action
+                                        i.fa-solid.fa-gamepad 
+                                        |   Action
                                     li
-                                        <i class="fa-solid fa-hard-drive"></i> 36GB
-                        .box-body 
+                                        i.fa-solid.fa-hard-drive 
+                                        |   36GB
+                        .box-body
                             img(src="./image/details-01.jpg", alt="details-01") 
                             img(src="./image/details-02.jpg", alt="details-02") 
                             img(src="./image/details-03.jpg", alt="details-03") 
@@ -153,7 +162,7 @@ html(lang="en")
                             em small contribution via PayPal
                             |   to info [at] templatemo.com and thank you for supporting. If you want to get the PSD source files, please contact us. Lorem ipsum dolor sit consectetur es dispic dipiscingei elit, sed doers eiusmod lisum hored tempor.
                         .btn Download Fortnite Now!
-                section.live-stream 
+                article.live-stream 
                     .stream-box
                         .box-iteamm
                             img(src="./image/service-01.jpg", alt="service01")
@@ -173,7 +182,8 @@ html(lang="en")
                 p 
                     | Copyright © 2036 Cyborg Gaming Company. All rights reserved.
                     br
-                    | Design: TemplateMo Distributed By ThemeWagon 
+                    | Design: TemplateMo Distributed By ThemeWagon
+        
 
 
                         
